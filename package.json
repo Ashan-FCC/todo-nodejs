@@ -1,0 +1,23 @@
+{
+  "name": "todo-codium",
+  "version": "1.0.0",
+  "description": "Todo App",
+  "main": "lib/handlers.js",
+  "bin": {
+    "todo": "bin/todo.js"
+  },
+  "scripts": {
+    "start": "node ./bin/todo.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ashan Perera",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.5.2",
+    "debug": "^4.0.1",
+    "inquirer": "^6.2.0",
+    "moment": "^2.22.2",
+    "redis": "^2.8.0",
+    "uniqid": "^5.0.3"
+  }
+}
