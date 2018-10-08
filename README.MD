@@ -18,7 +18,7 @@ Run `npm install`
 
 Copy .env_template to .localenv file
 
-Set the redis host and port in the .env file
+Set REDIS_URL in .localenv file
 
 ### Running the app
 
@@ -26,7 +26,7 @@ Set the redis host and port in the .env file
 Run `node ./bin/todo.js`
 
 #### Run the application with docker image
-docker-compose run --rm app ./docker-wait.sh node ./bin/todo.js
+Run `docker-compose run --rm app ./docker-wait.sh node ./bin/todo.js`
 
 
 
