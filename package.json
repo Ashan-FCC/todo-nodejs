@@ -15,8 +15,10 @@
   "dependencies": {
     "bluebird": "^3.5.2",
     "debug": "^4.0.1",
+    "dotenv": "^6.0.0",
     "inquirer": "^6.2.0",
     "moment": "^2.22.2",
+    "parse-database-url": "^0.3.0",
     "redis": "^2.8.0",
     "uniqid": "^5.0.3"
   }
