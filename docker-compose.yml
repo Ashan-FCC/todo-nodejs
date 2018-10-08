@@ -1,0 +1,17 @@
+version: '2'
+services:
+  cache:
+    image: redis
+    volumes:
+      - .db:/data
+  app:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    links:
+    - cache
+    depends_on:
+    - cache
+    command: ./docker-wait.sh
+    environment:
+    - REDIS_URL=redis://cache
